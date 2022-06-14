@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+          <title>
+                    Movie Sentiment Analysis
+          </title>
+</head>
+<body>
+          <form action = "{{ url_for('predict')}}" method="post" >
+                    <input type="Comment" name="comment"/>
+                    <button type="submit" class="btn btn-primary btn-block btn-large">predict</button>
+          </form>
+
+          <br>
+          <br>
+          {{prediction_text}}
+</body>
+
+</html>
